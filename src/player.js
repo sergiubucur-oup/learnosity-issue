@@ -12,7 +12,10 @@ function getLearnosityRequest() {
     type: "submit_practice",
     user_id: "labs-site",
     activity_template_id: "TestActivitySB",
-    config: {},
+    config: {
+      ignore_question_attributes:
+        document.location.search === "?ignore=1" ? ["valid_response"] : [],
+    },
   };
 }
 
