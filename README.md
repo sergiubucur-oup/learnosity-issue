@@ -39,22 +39,30 @@ npm start
 Happy flow, no `ignore_question_attributes` on the request:
 * Open http://localhost:8080 and start the assessment.
 * Type "test" in the input field.
+![test](./docs/images/test.JPG "test")
 * Submit the assessment, this will show the `session-detail-by-item` report.
 * Note that the score is 1/1, as expected.
+![test](./docs/images/test_success.JPG "test")
 * Refresh the page and start the assessment again.
 * Type anything other than "test" in the input field.
+![test](./docs/images/test_wrong.JPG "test")
 * Submit the assessment.
 * Note that the score is 0/1, as expected.
+![test](./docs/images/test_fail.JPG "test")
 
 Flow that demonstrates the issue, with `ignore_question_attributes` on the request:
 * Open http://localhost:8080/?ignore=1 and start the assessment.
 * Type "test" in the input field.
+![test](./docs/images/test_ignore.JPG "test")
 * Submit the assessment, this will show the `session-detail-by-item` report.
 * ***Note that the score is 0/0 instead of 1/1***.
+![test](./docs/images/test_ignore_success.JPG "test")
 * Refresh the page and start the assessment again.
 * Type anything other than "test" in the input field.
+![test](./docs/images/test_ignore_wrong.JPG "test")
 * Submit the assessment.
 * ***Note that the score is 0/0 instead of 0/1***.
+![test](./docs/images/test_ignore_fail.JPG "test")
 
 ## Details
 
