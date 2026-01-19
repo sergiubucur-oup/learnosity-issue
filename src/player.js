@@ -6,15 +6,15 @@ const SCRIPT_URL = "https://items-ie.learnosity.com/?latest-lts";
 
 function getLearnosityRequest() {
   return {
-    activity_id: "TestActivitySB",
+    activity_id: "TestActivitySB_v2",
     name: "Test Activity",
     rendering_type: "assess",
     type: "submit_practice",
     user_id: "labs-site",
-    activity_template_id: "TestActivitySB",
+    activity_template_id: "TestActivitySB_v2",
     config: {
       ignore_question_attributes:
-        document.location.search === "?ignore=1" ? ["valid_response"] : [],
+        document.location.search === "?ignore=1" ? ["validation"] : [],
     },
   };
 }

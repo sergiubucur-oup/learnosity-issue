@@ -4,7 +4,7 @@ import questionTypeJson from "./questions/test/CustomQuestionType.json";
 import questionTemplateJson from "./questions/test/QuestionTypeTemplate.json";
 
 const SCRIPT_URL = "https://authorapi.learnosity.com/?latest-lts";
-const BASE_URL = "https://sergiubucur-oup.github.io/learnosity-issue/docs";
+const BASE_URL = "https://sergiubucur-oup.github.io/learnosity-issue/docs/v2";
 
 function getLearnosityRequest() {
   const questionType = JSON.parse(

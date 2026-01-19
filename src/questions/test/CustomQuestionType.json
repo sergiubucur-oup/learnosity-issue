@@ -11,21 +11,27 @@
   "editor_schema": {
     "hidden_question": false,
     "attributes": {
-      "valid_response": {
-        "name": "Attribute used for scoring",
+      "validation": {
+        "name": "Container attribute used for scoring",
         "type": "object",
         "attributes": {
-          "score": {
-            "name": "Points",
-            "description": "Score awarded for the correct answer",
-            "type": "number",
-            "required": true,
-            "default": 1
-          },
-          "value": {
-            "name": "Correct answer",
-            "required": true,
-            "type": "string"
+          "valid_response": {
+            "name": "Attribute used for scoring",
+            "type": "object",
+            "attributes": {
+              "score": {
+                "name": "Points",
+                "description": "Score awarded for the correct answer",
+                "type": "number",
+                "required": true,
+                "default": 1
+              },
+              "value": {
+                "name": "Correct answer",
+                "required": true,
+                "type": "string"
+              }
+            }
           }
         }
       }

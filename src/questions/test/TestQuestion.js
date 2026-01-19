@@ -42,7 +42,7 @@ class TestQuestion {
             ? `
           <div>
             <div>given answer: ${this.init.response}</div>
-            <div>correct answer: ${this.init.question.valid_response?.value}</div>
+            <div>correct answer: ${this.init.question?.validation?.valid_response?.value}</div>
           </div>
         `
             : `<input type="text">`
